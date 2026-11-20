@@ -39,4 +39,5 @@ export const api = {
   quizResult: (answers) => request('/quiz/result', { method: 'POST', body: { answers } }),
   geocode: (q) => request(`/geocode${qs({ q })}`),
   authStatus: () => request('/auth/status'),
+  imageCredits: () => request('/image-credits'),
 };

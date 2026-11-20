@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IconDroplet, IconAlertTriangle, IconBackpack, IconScale, IconToolsKitchen2, IconCloud, IconUsers } from '@tabler/icons-react';
 import { formatKg } from '../Common/format.js';
+import { PhotoThumb } from '../Common/PhotoThumb.jsx';
 
 const CATEGORY_LABELS = { abri: 'Abri', couchage: 'Couchage', cuisine: 'Cuisine', eau: 'Eau', vetements: 'Vêtements', securite: 'Sécurité', navigation: 'Navigation', hygiene: 'Hygiène', divers: 'Divers' };
 
@@ -35,6 +36,7 @@ export function GearListResult({ result }) {
                 {items.map((i) => (
                   <li key={i.key}>
                     <label className="formCheck"><input type="checkbox" id={`gear-${i.key}`} />
+                      <PhotoThumb url={i.imageUrl} alt="" category={i.category} size="small" />
                       <span><b>{i.quantity > 1 ? `${i.quantity} × ` : ''}{i.name}</b>{i.shared && <span className="chip chipOutline">partagé</span>}<small>{i.reason} · {i.weightG} g</small></span>
                     </label>
                   </li>
@@ -47,7 +49,12 @@ export function GearListResult({ result }) {
 
       <section className="pageHeader" data-reveal>
         <h2><IconToolsKitchen2 size={26} /> Repas proposés</h2>
-        <ul className="quizFood">{result.foodPlan.map((f) => <li key={f.slug}><Link to={f.type === 'recette' ? '/recettes' : '/plats'}>{f.name}</Link> <small>{f.weightG} g</small></li>)}</ul>
+        <ul className="quizFood">{result.foodPlan.map((f) => (
+          <li key={f.slug} className="quizFoodItem">
+            <PhotoThumb url={f.imageUrl} alt="" size="medium" />
+            <span><Link to={f.type === 'recette' ? '/recettes' : '/plats'}>{f.name}</Link><small>{f.type === 'recette' ? 'Recette' : 'Plat à emporter'} · {f.weightG} g</small></span>
+          </li>
+        ))}</ul>
       </section>
 
       <section className="pageHeader" data-reveal>

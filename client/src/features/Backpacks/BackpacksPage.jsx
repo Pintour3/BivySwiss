@@ -8,6 +8,7 @@ import { PageHeader } from '../Common/PageHeader.jsx';
 import { ErrorState, LoadingState } from '../Common/StatusBlocks.jsx';
 import { formatChf, formatKg } from '../Common/format.js';
 import { BackpackGauge } from './BackpackGauge.jsx';
+import { PhotoThumb } from '../Common/PhotoThumb.jsx';
 import './backpacks.css';
 
 const USAGE_LABELS = { journee: 'Journée', weekend: 'Week-end', trek: 'Trek' };
@@ -78,8 +79,9 @@ export function BackpacksPage() {
               <fieldset key={cat} className="backpackGearGroup">
                 <legend>{CATEGORY_LABELS[cat] ?? cat}</legend>
                 {items.map((i) => (
-                  <label key={i.key} className="formCheck">
+                  <label key={i.key} className="formCheck backpackGearItem">
                     <input type="checkbox" id={`bag-${i.key}`} checked={checked.has(i.key)} onChange={() => toggle(i.key)} />
+                    <PhotoThumb image={i.image} alt="" category={i.category} size="small" />
                     <span>{i.name} <small>{i.volumeL} L · {i.weightG} g</small></span>
                   </label>
                 ))}

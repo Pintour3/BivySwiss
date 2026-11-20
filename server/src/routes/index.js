@@ -6,6 +6,7 @@ import { PlanningController } from '../controllers/PlanningController.js';
 import { MapController } from '../controllers/MapController.js';
 import { AuthController } from '../controllers/AuthController.js';
 import { optionalAuth, requireAuth } from '../middleware/auth.js';
+import imageCredits from '../../seed/data/imageCredits.json' with { type: 'json' };
 
 export const apiRouter = Router();
 apiRouter.use(optionalAuth);
@@ -23,6 +24,7 @@ apiRouter.get('/meals', h(CatalogController.listMeals));
 apiRouter.get('/backpacks', h(CatalogController.listBackpacks));
 apiRouter.post('/backpacks/recommend', h(PlanningController.recommendBackpack));
 apiRouter.get('/gear', h(CatalogController.listGear));
+apiRouter.get('/image-credits', (req, res) => res.json(Object.entries(imageCredits).map(([key, c]) => ({ key, ...c }))));
 
 // Planification (appels à des services externes : limités)
 const externalLimiter = rateLimit({ windowMs: 60_000, limit: 60 });

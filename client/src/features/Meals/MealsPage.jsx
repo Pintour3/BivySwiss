@@ -6,6 +6,7 @@ import { useReveal } from '../../hooks/useReveal.js';
 import { PageHeader } from '../Common/PageHeader.jsx';
 import { ErrorState, LoadingState } from '../Common/StatusBlocks.jsx';
 import { formatChf } from '../Common/format.js';
+import { PhotoThumb } from '../Common/PhotoThumb.jsx';
 
 const CATEGORY_LABELS = { lyophilise: 'Lyophilisé', maison: 'Fait maison', encas: 'En-cas', pain: 'Pain', fromage: 'Fromage', fruit: 'Fruit' };
 const shelf = (d) => (d >= 365 ? `${Math.round(d / 365)} an${d >= 730 ? 's' : ''}` : `${d} jour${d > 1 ? 's' : ''}`);
@@ -27,6 +28,7 @@ export function MealsPage() {
       <div className="cardGrid">
         {(data ?? []).map((m) => (
           <article key={m.slug} className="card" data-reveal>
+            <PhotoThumb image={m.image} alt={m.name} size="large" showCredit />
             <div className="hikeCardTop"><span className="chip">{CATEGORY_LABELS[m.category]}</span>{m.vegetarian && <span className="chip"><IconLeaf size={14} /> Végé</span>}</div>
             <h3>{m.name}</h3>
             <div className="statRow">

@@ -109,7 +109,7 @@ export class QuizService {
       const item = catalog.get(key);
       if (!item || items.some((i) => i.key === key)) return;
       const perPerson = item.shareable && share ? 1 / people : 1;
-      items.push({ key, name: item.name, category: item.category, quantity, reason,
+      items.push({ key, name: item.name, category: item.category, quantity, reason, imageUrl: item.image?.url ?? null,
         weightG: Math.round(item.weightG * quantity * perPerson), volumeL: Math.round(item.volumeL * quantity * perPerson * 10) / 10,
         shared: item.shareable && share });
     };
@@ -182,11 +182,11 @@ export class QuizService {
         Recipe.find({ meal: 'diner' }).limit(nights || 1).lean(),
         Recipe.find({ meal: 'petitDejeuner' }).limit(nights).lean(),
       ]);
-      return [...dinners, ...breakfasts].map((r) => ({ type: 'recette', slug: r.slug, name: r.name, weightG: r.weightG }));
+      return [...dinners, ...breakfasts].map((r) => ({ type: 'recette', slug: r.slug, name: r.name, weightG: r.weightG, imageUrl: r.image?.url ?? null }));
     }
     const category = food === 'lyophilise' ? 'lyophilise' : 'maison';
     const mains = await Meal.find({ category }).limit(Math.max(1, nights * 2)).lean();
     const snacks = await Meal.find({ category: 'encas' }).limit(2).lean();
-    return [...mains, ...snacks].map((m) => ({ type: 'plat', slug: m.slug, name: m.name, weightG: m.weightG }));
+    return [...mains, ...snacks].map((m) => ({ type: 'plat', slug: m.slug, name: m.name, weightG: m.weightG, imageUrl: m.image?.url ?? null }));
   }
 }

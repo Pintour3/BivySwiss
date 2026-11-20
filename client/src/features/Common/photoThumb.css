@@ -1,0 +1,8 @@
+.photoThumb { margin: 0; position: relative; overflow: hidden; background: var(--colorMist); flex: none; }
+.photoThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photoThumbFallback { width: 100%; height: 100%; display: grid; place-items: center; color: var(--colorLichen); }
+.photoThumb_large { aspect-ratio: 4 / 3; max-width: 100%; border-radius: var(--radiusMedium) var(--radiusMedium) 0 0; margin: calc(var(--space4) * -1) calc(var(--space4) * -1) 0; width: calc(100% + var(--space4) * 2); max-width: none; }
+.photoThumb_small { width: 44px; height: 44px; border-radius: var(--radiusSmall); }
+.photoThumb_medium { width: 64px; height: 64px; border-radius: var(--radiusSmall); }
+.photoThumbCredit { position: absolute; right: 0; bottom: 0; max-width: 100%; padding: 2px 8px; font-size: .7rem; line-height: 1.4; color: var(--colorPaper); background: rgba(28, 42, 36, .72); border-top-left-radius: var(--radiusSmall); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.photoThumbCredit a { color: inherit; }

@@ -1,0 +1,498 @@
+{
+  "recipes/porridge-pommes-cannelle": {
+    "url": "/images/recipes/porridge-pommes-cannelle.jpg",
+    "file": "File:Oatmeal_(1).jpg",
+    "author": "Renee Comet (Photographer)",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oatmeal_(1).jpg"
+  },
+  "recipes/roesti-express": {
+    "url": "/images/recipes/roesti-express.jpg",
+    "file": "File:Roesti.jpg",
+    "author": "Benutzer:Mussklprozz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roesti.jpg"
+  },
+  "recipes/couscous-legumes": {
+    "url": "/images/recipes/couscous-legumes.jpg",
+    "file": "File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "author": "Lmmima",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg"
+  },
+  "recipes/pates-pesto-parmesan": {
+    "url": "/images/recipes/pates-pesto-parmesan.jpg",
+    "file": "File:BasilPesto.JPG",
+    "author": "Ɱ",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BasilPesto.JPG"
+  },
+  "gear/rechaud": {
+    "url": "/images/gear/rechaud.jpg",
+    "file": "File:Portable_stove.jpg",
+    "author": "en.wikipedia.org/wiki/User:Duk",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portable_stove.jpg"
+  },
+  "gear/popote": {
+    "url": "/images/gear/popote.jpg",
+    "file": "File:US_Army_mess_kits_-_IMG_1506.JPG",
+    "author": "Daderot",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_Army_mess_kits_-_IMG_1506.JPG"
+  },
+  "gear/briquet": {
+    "url": "/images/gear/briquet.jpg",
+    "file": "File:White_lighter_with_flame.JPG",
+    "author": "Kimmo Palosaari",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_lighter_with_flame.JPG"
+  },
+  "gear/couverts": {
+    "url": "/images/gear/couverts.jpg",
+    "file": "File:Sporks_-_20070804.jpg",
+    "author": "Original uploader was Jmb at en.wikipedia",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sporks_-_20070804.jpg"
+  },
+  "recipes/wrap-houmous": {
+    "url": "/images/recipes/wrap-houmous.jpg",
+    "file": "File:Smoked_chicken_and_avocado_wrap.jpg",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smoked_chicken_and_avocado_wrap.jpg"
+  },
+  "recipes/soupe-lentilles-corail": {
+    "url": "/images/recipes/soupe-lentilles-corail.jpg",
+    "file": "File:EgFoodLentilSoup.jpg",
+    "author": "Roland Unger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EgFoodLentilSoup.jpg"
+  },
+  "recipes/chocolat-chaud-epice": {
+    "url": "/images/recipes/chocolat-chaud-epice.jpg",
+    "file": "File:After_The_St._Patrick's_Parade_Late_Lunch_@_Lemon,_Dawson_Street,_Dublin,_Rep._Of_Ireland_A_Fine_Tradition!_(6992614913).jpg",
+    "author": "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:After_The_St._Patrick%27s_Parade_Late_Lunch_@_Lemon,_Dawson_Street,_Dublin,_Rep._Of_Ireland_A_Fine_Tradition!_(6992614913).jpg"
+  },
+  "recipes/barres-avoine-maison": {
+    "url": "/images/recipes/barres-avoine-maison.jpg",
+    "file": "File:Flapjacks.jpg",
+    "author": "Alistair young",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flapjacks.jpg"
+  },
+  "recipes/oeufs-brouilles-poudre": {
+    "url": "/images/recipes/oeufs-brouilles-poudre.jpg",
+    "file": "File:Scrambed_eggs.jpg",
+    "author": "Takeaway",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scrambed_eggs.jpg"
+  },
+  "meals/lyo-chili-sin-carne": {
+    "url": "/images/meals/lyo-chili-sin-carne.jpg",
+    "file": "File:Bowl_of_chili.jpg",
+    "author": "Carstor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bowl_of_chili.jpg"
+  },
+  "meals/lyo-muesli-fruits": {
+    "url": "/images/meals/lyo-muesli-fruits.jpg",
+    "file": "File:Dorset_Cereals_muesli.jpg",
+    "author": "Mx. Granger",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorset_Cereals_muesli.jpg"
+  },
+  "meals/taboule-maison": {
+    "url": "/images/meals/taboule-maison.jpg",
+    "file": "File:Tabouleh_1.JPG",
+    "author": "Miansari66",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tabouleh_1.JPG"
+  },
+  "meals/sandwich-viande-sechee": {
+    "url": "/images/meals/sandwich-viande-sechee.jpg",
+    "file": "File:Bacon,_lettuce,_tomato,_and_avocado.jpg",
+    "author": "Jami430",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bacon,_lettuce,_tomato,_and_avocado.jpg"
+  },
+  "meals/gruyere-aop": {
+    "url": "/images/meals/gruyere-aop.jpg",
+    "file": "File:Gruyere_alpage_th_wa.jpg",
+    "author": "Gruyere alpage",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gruyere_alpage_th_wa.jpg"
+  },
+  "meals/trail-mix": {
+    "url": "/images/meals/trail-mix.jpg",
+    "file": "File:2021-05-15_04_45_03_A_sample_of_Kirkland_Trail_Mix_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg",
+    "author": "Famartin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-05-15_04_45_03_A_sample_of_Kirkland_Trail_Mix_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg"
+  },
+  "meals/chocolat-noir": {
+    "url": "/images/meals/chocolat-noir.jpg",
+    "file": "File:Green_and_Black's_dark_chocolate_bar_2.jpg",
+    "author": "Mx. Granger",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_and_Black%27s_dark_chocolate_bar_2.jpg"
+  },
+  "meals/pommes": {
+    "url": "/images/meals/pommes.jpg",
+    "file": "File:Pink_lady_and_cross_section.jpg",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pink_lady_and_cross_section.jpg"
+  },
+  "meals/barres-cereales": {
+    "url": "/images/meals/barres-cereales.jpg",
+    "file": "File:Granola,_yogurt,_fruit._(16696981528).jpg",
+    "author": "Arnold Gatilao from Oakland, CA, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granola,_yogurt,_fruit._(16696981528).jpg"
+  },
+  "gear/hamac": {
+    "url": "/images/gear/hamac.png",
+    "file": "File:BurntOrangeNubé_Small.png",
+    "author": "Best Gear Designs",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BurntOrangeNub%C3%A9_Small.png"
+  },
+  "gear/sanglesHamac": {
+    "url": "/images/gear/sanglesHamac.jpg",
+    "file": "File:Hammock11.jpg",
+    "author": "Wikipediuh",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hammock11.jpg"
+  },
+  "gear/tarp": {
+    "url": "/images/gear/tarp.jpg",
+    "file": "File:Tarpaulin_fly_tent.jpg",
+    "author": "Ryan Bushby(HighInBC)",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tarpaulin_fly_tent.jpg"
+  },
+  "gear/sacCouchage": {
+    "url": "/images/gear/sacCouchage.jpg",
+    "file": "File:Israel_2_021_Sleeping_Rucksack-Tourist.jpg",
+    "author": "Auteur inconnu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Israel_2_021_Sleeping_Rucksack-Tourist.jpg"
+  },
+  "gear/sacCouchageFroid": {
+    "url": "/images/gear/sacCouchageFroid.jpg",
+    "file": "File:Israel_2_021_Sleeping_Rucksack-Tourist.jpg",
+    "author": "Auteur inconnu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Israel_2_021_Sleeping_Rucksack-Tourist.jpg"
+  },
+  "gear/matelas": {
+    "url": "/images/gear/matelas.jpg",
+    "file": "File:Mattress.jpg",
+    "author": "No machine-readable author provided. Ilkant~commonswiki assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mattress.jpg"
+  },
+  "gear/underquilt": {
+    "url": "/images/gear/underquilt.png",
+    "file": "File:BurntOrangeNubé_Small.png",
+    "author": "Best Gear Designs",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BurntOrangeNub%C3%A9_Small.png"
+  },
+  "gear/oreiller": {
+    "url": "/images/gear/oreiller.jpg",
+    "file": "File:Pillows_on_a_hotel_bed.jpg",
+    "author": "Amin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pillows_on_a_hotel_bed.jpg"
+  },
+  "gear/tasse": {
+    "url": "/images/gear/tasse.jpg",
+    "file": "File:Mug_of_Tea.JPG",
+    "author": "Factorylad",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mug_of_Tea.JPG"
+  },
+  "gear/couteau": {
+    "url": "/images/gear/couteau.jpg",
+    "file": "File:My_swiss_army_knife.JPG",
+    "author": "Biso",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:My_swiss_army_knife.JPG"
+  },
+  "gear/sacPoubelle": {
+    "url": "/images/gear/sacPoubelle.jpg",
+    "file": "File:Trash_bin_in_Paris.jpg",
+    "author": "Daniel Stockman",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trash_bin_in_Paris.jpg"
+  },
+  "gear/gourde1l": {
+    "url": "/images/gear/gourde1l.jpg",
+    "file": "File:Multi-use_water_bottle.JPG",
+    "author": "Amraepowell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Multi-use_water_bottle.JPG"
+  },
+  "gear/poche2l": {
+    "url": "/images/gear/poche2l.jpg",
+    "file": "File:Hydration_pack.jpg",
+    "author": "Uploaded to the English language Wikipedia by user Toytoy",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydration_pack.jpg"
+  },
+  "gear/veste": {
+    "url": "/images/gear/veste.jpg",
+    "file": "File:David_Julian_Kirchner_(cropped).jpg",
+    "author": "Donni Schoenemond",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Julian_Kirchner_(cropped).jpg"
+  },
+  "gear/doudoune": {
+    "url": "/images/gear/doudoune.jpg",
+    "file": "File:Adidas_Helionic_Down_Jacket.jpg",
+    "author": "Adenosine Triphosphate",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adidas_Helionic_Down_Jacket.jpg"
+  },
+  "gear/polaire": {
+    "url": "/images/gear/polaire.jpg",
+    "file": "File:Antron_Fleece.jpg",
+    "author": "iPowahFX Studio",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antron_Fleece.jpg"
+  },
+  "gear/bonnet": {
+    "url": "/images/gear/bonnet.jpg",
+    "file": "File:Entrelac-hat.jpg",
+    "author": "No machine-readable author provided. CommonsHelper2 Bot assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrelac-hat.jpg"
+  },
+  "gear/rechange": {
+    "url": "/images/gear/rechange.jpg",
+    "file": "File:HandKnittedWhiteLaceSock.jpg",
+    "author": "Loggie-log",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HandKnittedWhiteLaceSock.jpg"
+  },
+  "gear/housseSac": {
+    "url": "/images/gear/housseSac.jpg",
+    "file": "File:Rucksack1.jpg",
+    "author": "de:Benutzer:sjr",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rucksack1.jpg"
+  },
+  "gear/pharmacie": {
+    "url": "/images/gear/pharmacie.jpg",
+    "file": "File:British_Red_Cross_First_Aid_Kits.jpg",
+    "author": "Owain Davies",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_Red_Cross_First_Aid_Kits.jpg"
+  },
+  "gear/frontale": {
+    "url": "/images/gear/frontale.jpg",
+    "file": "File:Black_Diamond_Spot_on_Half_Dome_Helmet.JPG",
+    "author": "Eric T Gunther",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Diamond_Spot_on_Half_Dome_Helmet.JPG"
+  },
+  "gear/couverture": {
+    "url": "/images/gear/couverture.jpg",
+    "file": "File:RescueFoil.jpg",
+    "author": "No machine-readable author provided. Firetwister assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RescueFoil.jpg"
+  },
+  "gear/carte": {
+    "url": "/images/gear/carte.png",
+    "file": "File:Topographic_map_example.png",
+    "author": "USGS",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topographic_map_example.png"
+  },
+  "gear/trousse": {
+    "url": "/images/gear/trousse.jpg",
+    "file": "File:Kulturbeutel1.jpg",
+    "author": "Peng",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kulturbeutel1.jpg"
+  },
+  "gear/pelle": {
+    "url": "/images/gear/pelle.jpg",
+    "file": "File:Masons_trowel.jpg",
+    "author": "Mike Lupinacci",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masons_trowel.jpg"
+  },
+  "gear/antimoustique": {
+    "url": "/images/gear/antimoustique.jpg",
+    "file": "File:Mosquito_coil.JPG",
+    "author": "مانفی",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosquito_coil.JPG"
+  },
+  "recipes/risotto-champignons": {
+    "url": "/images/recipes/risotto-champignons.jpg",
+    "file": "File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
+    "author": "Luca Nebuloni from Milan, Italy",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg"
+  },
+  "meals/lyo-poulet-curry": {
+    "url": "/images/meals/lyo-poulet-curry.jpg",
+    "file": "File:Chicken_tikka_masala_(cropped).jpg",
+    "author": "Michael Hays",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_(cropped).jpg"
+  },
+  "meals/pain-seigle-valaisan": {
+    "url": "/images/meals/pain-seigle-valaisan.jpg",
+    "file": "File:Market_Bread,_Riga,_Latvia.jpg",
+    "author": "Ken Eckert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Market_Bread,_Riga,_Latvia.jpg"
+  },
+  "meals/viande-sechee-grisons": {
+    "url": "/images/meals/viande-sechee-grisons.jpg",
+    "file": "File:Luzern_asv2022-10_Bündnerland_Vorspeise_Bündnerfleisch.jpg",
+    "author": "A.Savin",
+    "license": "FAL",
+    "licenseUrl": "http://artlibre.org/licence/lal/en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luzern_asv2022-10_B%C3%BCndnerland_Vorspeise_B%C3%BCndnerfleisch.jpg"
+  },
+  "gear/tente1p": {
+    "url": "/images/gear/tente1p.jpg",
+    "file": "File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg",
+    "author": "Trougnouf (Benoit Brummer)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg"
+  },
+  "gear/tente2p": {
+    "url": "/images/gear/tente2p.jpg",
+    "file": "File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg",
+    "author": "Trougnouf (Benoit Brummer)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg"
+  },
+  "gear/tente3p": {
+    "url": "/images/gear/tente3p.jpg",
+    "file": "File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg",
+    "author": "Trougnouf (Benoit Brummer)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg"
+  },
+  "gear/surpantalon": {
+    "url": "/images/gear/surpantalon.jpg",
+    "file": "File:Uniformbroek, regenbroek van donkerblauw kunststof, objectnr 72481-13(1).JPG",
+    "author": "Museum Rotterdam",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Uniformbroek,_regenbroek_van_donkerblauw_kunststof,_objectnr_72481-13(1).JPG"
+  },
+  "gear/batons": {
+    "url": "/images/gear/batons.jpg",
+    "file": "File:Retracted trekking poles.jpg",
+    "author": "Sarang",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Retracted_trekking_poles.jpg"
+  },
+  "gear/cartouche": {
+    "url": "/images/gear/cartouche.jpg",
+    "file": "File:1970s Bahco Primus 2255 Grasshopper camping stove mounted on a Primus-Sievert 2201 butane gas canister.jpg",
+    "author": "R. Henrik Nilsson",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970s_Bahco_Primus_2255_Grasshopper_camping_stove_mounted_on_a_Primus-Sievert_2201_butane_gas_canister.jpg"
+  },
+  "gear/filtre": {
+    "url": "/images/gear/filtre.jpg",
+    "file": "File:WR126.8 Hiker Filters Water from Intermittent Stream (33500630740).jpg",
+    "author": "Chris Hunkeler from Carlsbad, California, USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WR126.8_Hiker_Filters_Water_from_Intermittent_Stream_(33500630740).jpg"
+  },
+  "gear/pastilles": {
+    "url": "/images/gear/pastilles.jpg",
+    "file": "File:Water purification, June 2011 (cropped).jpg",
+    "author": "Rich Bartell, U.S. Army Africa Public Affairs",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_purification,_June_2011_(cropped).jpg"
+  },
+  "gear/casquette": {
+    "url": "/images/gear/casquette.jpg",
+    "file": "File:Baseball cap.jpg",
+    "author": "TexasRebel",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baseball_cap.jpg"
+  },
+  "gear/creme": {
+    "url": "/images/gear/creme.jpg",
+    "file": "File:Day 1- Hiking Essentials (19444913913).jpg",
+    "author": "BLMUtah",
+    "license": "Public domain",
+    "licenseUrl": null,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Day_1-_Hiking_Essentials_(19444913913).jpg"
+  }
+}

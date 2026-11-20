@@ -20,10 +20,12 @@
 .quizGearGroup { break-inside: avoid; margin-bottom: var(--space5); }
 .quizGearGroup h3 { border-bottom: 2px solid var(--colorSlate); padding-bottom: 4px; margin-bottom: var(--space2); }
 .quizGearGroup ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space2); }
-.quizGearGroup .formCheck { align-items: flex-start; }
+.quizGearGroup .formCheck { align-items: center; }
 .quizGearGroup .formCheck span { display: grid; gap: 2px; }
 .quizGearGroup .formCheck .chip { justify-self: start; }
 .quizGearGroup small { color: var(--colorStone); font-size: .82rem; }
 .quizGearGroup input:checked + span b { text-decoration: line-through; color: var(--colorStone); }
-.quizFood { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.quizFood { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space3); }
+.quizFoodItem { display: flex; gap: var(--space3); align-items: center; }
+.quizFoodItem span { display: grid; min-width: 0; }
 .quizFood small { color: var(--colorStone); }

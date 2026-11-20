@@ -5,6 +5,7 @@ import { useApi } from '../../hooks/useApi.js';
 import { useReveal } from '../../hooks/useReveal.js';
 import { PageHeader } from '../Common/PageHeader.jsx';
 import { ErrorState, LoadingState } from '../Common/StatusBlocks.jsx';
+import { PhotoThumb } from '../Common/PhotoThumb.jsx';
 import './recipes.css';
 
 export const MEAL_LABELS = { petitDejeuner: 'Petit-déjeuner', dejeuner: 'Midi', diner: 'Souper', encas: 'En-cas', boisson: 'Boisson' };
@@ -32,6 +33,7 @@ export function RecipesPage() {
         {(data ?? []).map((r) => (
           <details key={r.slug} className="card recipeCard" data-reveal>
             <summary>
+              <PhotoThumb image={r.image} alt={r.name} size="large" showCredit />
               <div className="hikeCardTop"><span className="chip">{MEAL_LABELS[r.meal]}</span><span className="chip chipOutline">{FUEL_LABELS[r.fuel]}</span>{r.vegetarian && <span className="chip"><IconLeaf size={14} /> Végé</span>}</div>
               <h3>{r.name}</h3>
               <div className="statRow">

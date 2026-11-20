@@ -62,3 +62,7 @@ button, input, select { font: inherit; color: inherit; }
 .filterBar { display: flex; flex-wrap: wrap; gap: var(--space3); align-items: end; }
 .filterBar .formField { min-width: 150px; flex: 1 1 150px; }
 .visuallyHidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.creditsList { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space3); }
+.creditsItem { display: flex; gap: var(--space3); align-items: center; font-size: .85rem; min-width: 0; }
+.creditsItem span { min-width: 0; overflow-wrap: anywhere; }

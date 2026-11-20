@@ -15,6 +15,9 @@ const mealSchema = new mongoose.Schema({
   whereToBuy: [String],
   notes: String,
   vegetarian: { type: Boolean, default: false },
+  image: {                     // photo libre (Wikimedia Commons) et attribution
+    url: String, author: String, license: String, licenseUrl: String, sourceUrl: String,
+  },
 }, { timestamps: true });
 
 export const Meal = mongoose.model('Meal', mealSchema);

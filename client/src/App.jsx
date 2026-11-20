@@ -10,6 +10,7 @@ import { MealsPage } from './features/Meals/MealsPage.jsx';
 import { BackpacksPage } from './features/Backpacks/BackpacksPage.jsx';
 import { LoginPage } from './features/Auth/LoginPage.jsx';
 import { NotFoundPage } from './features/Common/NotFoundPage.jsx';
+import { CreditsPage } from './features/Common/CreditsPage.jsx';
 
 export function App() {
   return (
@@ -24,6 +25,7 @@ export function App() {
         <Route path="plats" element={<MealsPage />} />
         <Route path="sacs" element={<BackpacksPage />} />
         <Route path="connexion" element={<LoginPage />} />
+        <Route path="credits" element={<CreditsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>

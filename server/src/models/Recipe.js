@@ -17,6 +17,9 @@ const recipeSchema = new mongoose.Schema({
   homePrep: String,            // ce qu'on peut préparer à la maison
   tags: [String],
   vegetarian: { type: Boolean, default: false },
+  image: {                     // photo libre (Wikimedia Commons) et attribution
+    url: String, author: String, license: String, licenseUrl: String, sourceUrl: String,
+  },
 }, { timestamps: true });
 
 export const Recipe = mongoose.model('Recipe', recipeSchema);

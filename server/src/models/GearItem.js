@@ -9,6 +9,9 @@ const gearItemSchema = new mongoose.Schema({
   volumeL: Number,
   shareable: { type: Boolean, default: false }, // peut être partagé dans un groupe (tente, réchaud...)
   notes: String,
+  image: {                     // photo libre (Wikimedia Commons) et attribution
+    url: String, author: String, license: String, licenseUrl: String, sourceUrl: String,
+  },
 }, { timestamps: true });
 
 export const GearItem = mongoose.model('GearItem', gearItemSchema);

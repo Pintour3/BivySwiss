@@ -9,7 +9,8 @@
     "start": "node --env-file-if-exists=../.env src/index.js",
     "seed": "node --env-file-if-exists=../.env seed/seed.js",
     "tiles:prefetch": "node --env-file-if-exists=../.env scripts/prefetchTiles.js",
-    "test": "node --test test/"
+    "test": "node --test test/",
+    "images:fetch": "node scripts/fetchImages.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

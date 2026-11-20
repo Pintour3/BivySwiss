@@ -2,6 +2,14 @@
 
 Un petit résumé à chaque push : ce qui a été ajouté ou corrigé.
 
+## 0.3.0 — Photos des plats, recettes et matériel (2026-11-20)
+
+- Photos libres (Wikimedia Commons) pour les 10 recettes, les 12 plats et 40 objets de matériel, stockées dans `server/public/images/` et servies par l'API sous `/images`.
+- Script `npm run images:fetch --workspace server` : télécharge la photo principale de l'article Wikipédia choisi (ou un fichier précis), garde l'auteur et la licence, et réessaie si Wikimedia limite le débit.
+- Attribution : auteur et licence affichés sur chaque photo, et page « Crédits photos » accessible depuis le pied de page.
+- Photos visibles dans Recettes, Plats, Mon sac et la liste du quiz bivouac. Sans photo (sursac, batterie), l'icône de la catégorie s'affiche.
+- Correctif : 7 photos hors sujet remplacées après vérification (cartouche, casquette, crème solaire, filtre, pastilles…).
+
 ## 0.2.0 — Frontend React (2026-11-20)
 
 - Application React (Vite) avec la palette Ardoise et lichen (logo et SVG mis à jour), les icônes Tabler et les animations GSAP.

@@ -6,6 +6,15 @@ import { recipes } from './data/recipes.js';
 import { meals } from './data/meals.js';
 import { backpacks } from './data/backpacks.js';
 import { gearItems } from './data/gearItems.js';
+import imageCredits from './data/imageCredits.json' with { type: 'json' };
+
+// Ajoute la photo (et son attribution) quand elle existe pour cet élément.
+const withImage = (type, idKey) => (doc) => {
+  const credit = imageCredits[`${type}/${doc[idKey]}`];
+  if (!credit) return doc;
+  const { url, author, license, licenseUrl, sourceUrl } = credit;
+  return { ...doc, image: { url, author, license, licenseUrl, sourceUrl } };
+};
 
 async function upsertAll(Model, docs, key = 'slug') {
   const ops = docs.map((doc) => ({ replaceOne: { filter: { [key]: doc[key] }, replacement: doc, upsert: true } }));
@@ -17,10 +26,10 @@ await connectDatabase();
 try {
   await Promise.all([Hike, Recipe, Meal, Backpack, GearItem].map((m) => m.syncIndexes()));
   await upsertAll(Hike, hikes);
-  await upsertAll(Recipe, recipes);
-  await upsertAll(Meal, meals);
+  await upsertAll(Recipe, recipes.map(withImage('recipes', 'slug')));
+  await upsertAll(Meal, meals.map(withImage('meals', 'slug')));
   await upsertAll(Backpack, backpacks);
-  await upsertAll(GearItem, gearItems, 'key');
+  await upsertAll(GearItem, gearItems.map(withImage('gear', 'key')), 'key');
 } finally {
   await disconnectDatabase();
 }
