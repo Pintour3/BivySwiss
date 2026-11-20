@@ -1,19 +1,19 @@
-/* Palette Forêt BivySwiss : blanc, vert forêt, vert sauge. Aucun dégradé. */
+/* Palette « Ardoise et lichen » BivySwiss : blanc, vert ardoise, vert lichen. Aucun dégradé. */
 :root {
-  --colorForest: #1F4A33;
-  --colorForestDeep: #10261A;
-  --colorSage: #9CC3A5;
-  --colorSageLight: #E4EFE6;
+  --colorSlate: #2C3F37;
+  --colorSlateDeep: #1C2A24;
+  --colorLichen: #9BAF4C;
+  --colorLichenLight: #ECF1DC;
   --colorPaper: #FFFFFF;
-  --colorMist: #F4F7F4;
-  --colorInk: #14231A;
-  --colorStone: #5B6B60;
-  --colorLine: #D8E2DA;
+  --colorMist: #F7F9F4;
+  --colorInk: #17231E;
+  --colorStone: #5D6B64;
+  --colorLine: #DCE3DE;
   --colorWarn: #9A5B12;
   --colorWarnBg: #FBF1E2;
   --colorDanger: #A3261B;
   --colorDangerBg: #FBE9E7;
-  --colorOk: #2E6B3F;
+  --colorOk: #5E7A2E;
 
   --fontTitle: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
   --fontBody: 'Chakra Petch', 'Segoe UI', system-ui, sans-serif;

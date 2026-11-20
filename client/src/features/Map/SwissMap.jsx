@@ -33,17 +33,17 @@ export function SwissMap({ routes = [], markers = [], height = 420, showTrails =
         {showTrails && <TileLayer url="/api/map/tiles/trails/{z}/{x}/{y}" maxZoom={17} opacity={0.8} />}
         {routes.map((r) => (
           <Polyline key={r.id} positions={r.coordinates.map(([lon, lat]) => [lat, lon])}
-            pathOptions={{ color: '#10261A', weight: r.highlighted === false ? 3 : 5, opacity: 0.9 }} />
+            pathOptions={{ color: '#1C2A24', weight: r.highlighted === false ? 3 : 5, opacity: 0.9 }} />
         ))}
         {routes.flatMap((r) => (r.waypoints ?? []).map((w, i) => (
           <CircleMarker key={`${r.id}-${i}`} center={[w.coordinates[1], w.coordinates[0]]} radius={5}
-            pathOptions={{ color: '#FFFFFF', weight: 2, fillColor: '#1F4A33', fillOpacity: 1 }}>
+            pathOptions={{ color: '#FFFFFF', weight: 2, fillColor: '#2C3F37', fillOpacity: 1 }}>
             <Tooltip>{w.name}</Tooltip>
           </CircleMarker>
         )))}
         {markers.map((m) => (
           <CircleMarker key={m.id} center={[m.coordinates[1], m.coordinates[0]]} radius={7}
-            pathOptions={{ color: '#FFFFFF', weight: 2, fillColor: '#1F4A33', fillOpacity: 1 }}
+            pathOptions={{ color: '#FFFFFF', weight: 2, fillColor: '#2C3F37', fillOpacity: 1 }}
             eventHandlers={m.onClick ? { click: m.onClick } : undefined}>
             <Tooltip>{m.label}</Tooltip>
           </CircleMarker>

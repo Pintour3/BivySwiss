@@ -2,19 +2,19 @@
 .backpackBuilderHead { display: flex; justify-content: space-between; align-items: end; gap: var(--space3); }
 .backpackGearGroups { columns: 240px; column-gap: var(--space5); }
 .backpackGearGroup { break-inside: avoid; border: 0; padding: 0; margin: 0 0 var(--space4); display: grid; gap: 6px; }
-.backpackGearGroup legend { font-family: var(--fontTitle); font-size: 1.3rem; font-weight: 700; text-transform: capitalize; color: var(--colorForest); margin-bottom: 4px; }
+.backpackGearGroup legend { font-family: var(--fontTitle); font-size: 1.3rem; font-weight: 700; text-transform: capitalize; color: var(--colorSlate); margin-bottom: 4px; }
 .backpackGearGroup small { color: var(--colorStone); font-size: .8rem; }
 .backpackSummary { position: sticky; top: 80px; justify-items: stretch; }
 .backpackHint { font-size: .85rem; color: var(--colorStone); }
 .backpackGauge { display: grid; justify-items: center; gap: var(--space2); }
 .backpackGaugeShape { width: 140px; height: auto; }
-.backpackGaugeHandle { fill: none; stroke: var(--colorForest); stroke-width: 4; }
-.backpackGaugeOutline { fill: none; stroke: var(--colorForest); stroke-width: 4; }
+.backpackGaugeHandle { fill: none; stroke: var(--colorSlate); stroke-width: 4; }
+.backpackGaugeOutline { fill: none; stroke: var(--colorSlate); stroke-width: 4; }
 .backpackGaugeEmpty { fill: var(--colorMist); }
 .backpackGaugeFillWrap { width: 100%; height: 100%; display: flex; align-items: flex-end; }
-.backpackGaugeFill { width: 100%; height: 0; background: var(--colorSage); }
+.backpackGaugeFill { width: 100%; height: 0; background: var(--colorLichen); }
 .backpackGaugeTight .backpackGaugeFill { background: #D9A441; }
 .backpackGaugeOver .backpackGaugeFill { background: var(--colorDanger); }
-.backpackGaugeValue { font-family: var(--fontTitle); font-size: 2.4rem; font-weight: 700; color: var(--colorForest); font-variant-numeric: tabular-nums; }
-.backpackCardSelected { border-color: var(--colorForest); box-shadow: inset 0 0 0 1px var(--colorForest); }
+.backpackGaugeValue { font-family: var(--fontTitle); font-size: 2.4rem; font-weight: 700; color: var(--colorSlate); font-variant-numeric: tabular-nums; }
+.backpackCardSelected { border-color: var(--colorSlate); box-shadow: inset 0 0 0 1px var(--colorSlate); }
 @media (max-width: 860px) { .backpackBuilder { grid-template-columns: 1fr; } .backpackSummary { position: static; } }

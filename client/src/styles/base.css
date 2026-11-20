@@ -8,15 +8,15 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
-h1, h2, h3 { font-family: var(--fontTitle); font-weight: 700; line-height: 1.05; margin: 0; letter-spacing: 0.01em; text-wrap: balance; color: var(--colorForestDeep); }
+h1, h2, h3 { font-family: var(--fontTitle); font-weight: 700; line-height: 1.05; margin: 0; letter-spacing: 0.01em; text-wrap: balance; color: var(--colorSlateDeep); }
 h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); }
 h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
 h3 { font-size: 1.5rem; }
 p { margin: 0; }
-a { color: var(--colorForest); }
+a { color: var(--colorSlate); }
 img { max-width: 100%; }
 button, input, select { font: inherit; color: inherit; }
-:focus-visible { outline: 2px solid var(--colorForest); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--colorSlate); outline-offset: 2px; }
 
 .pageContainer { max-width: var(--contentWidth); margin: 0 auto; padding: var(--space6) var(--space4) var(--space7); display: grid; gap: var(--space6); }
 .pageHeader { display: grid; gap: var(--space2); max-width: 70ch; }
@@ -26,16 +26,16 @@ button, input, select { font: inherit; color: inherit; }
 .buttonPrimary, .buttonSecondary, .buttonGhost {
   display: inline-flex; align-items: center; gap: var(--space2); justify-content: center;
   border-radius: var(--radiusSmall); padding: 10px 16px; font-weight: 600; cursor: pointer; text-decoration: none;
-  border: 1px solid var(--colorForest); transition: background-color .15s, color .15s;
+  border: 1px solid var(--colorSlate); transition: background-color .15s, color .15s;
 }
-.buttonPrimary { background: var(--colorForest); color: var(--colorPaper); }
-.buttonPrimary:hover { background: var(--colorForestDeep); }
+.buttonPrimary { background: var(--colorSlate); color: var(--colorPaper); }
+.buttonPrimary:hover { background: var(--colorSlateDeep); }
 .buttonPrimary:disabled { opacity: .5; cursor: not-allowed; }
-.buttonSecondary { background: var(--colorPaper); color: var(--colorForest); }
-.buttonSecondary:hover { background: var(--colorSageLight); }
-.buttonGhost { border-color: transparent; background: transparent; color: var(--colorForest); padding-inline: 8px; }
+.buttonSecondary { background: var(--colorPaper); color: var(--colorSlate); }
+.buttonSecondary:hover { background: var(--colorLichenLight); }
+.buttonGhost { border-color: transparent; background: transparent; color: var(--colorSlate); padding-inline: 8px; }
 
-.chip { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--colorSageLight); color: var(--colorForest); white-space: nowrap; }
+.chip { display: inline-flex; align-items: center; gap: 4px; font-size: .8rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; background: var(--colorLichenLight); color: var(--colorSlate); white-space: nowrap; }
 .chipWarn { background: var(--colorWarnBg); color: var(--colorWarn); }
 .chipDanger { background: var(--colorDangerBg); color: var(--colorDanger); }
 .chipOutline { background: transparent; border: 1px solid var(--colorLine); color: var(--colorStone); }
@@ -44,15 +44,15 @@ button, input, select { font: inherit; color: inherit; }
 .formField input, .formField select {
   font-weight: 400; padding: 9px 10px; border: 1px solid var(--colorLine); border-radius: var(--radiusSmall); background: var(--colorPaper); min-width: 0;
 }
-.formField input:focus, .formField select:focus { border-color: var(--colorForest); outline: none; box-shadow: 0 0 0 2px var(--colorSageLight); }
+.formField input:focus, .formField select:focus { border-color: var(--colorSlate); outline: none; box-shadow: 0 0 0 2px var(--colorLichenLight); }
 .formCheck { display: flex; align-items: center; gap: var(--space2); font-weight: 400; cursor: pointer; }
-.formCheck input { accent-color: var(--colorForest); width: 18px; height: 18px; }
+.formCheck input { accent-color: var(--colorSlate); width: 18px; height: 18px; }
 
 .statRow { display: flex; flex-wrap: wrap; gap: var(--space2) var(--space4); font-variant-numeric: tabular-nums; font-size: .9rem; color: var(--colorStone); }
 .statRow span { display: inline-flex; align-items: center; gap: 4px; }
 .statRow b { color: var(--colorInk); font-weight: 600; }
 
-.notice { display: flex; gap: var(--space3); padding: var(--space3) var(--space4); border-radius: var(--radiusMedium); background: var(--colorMist); border-left: 3px solid var(--colorSage); font-size: .95rem; }
+.notice { display: flex; gap: var(--space3); padding: var(--space3) var(--space4); border-radius: var(--radiusMedium); background: var(--colorMist); border-left: 3px solid var(--colorLichen); font-size: .95rem; }
 .noticeWarn { background: var(--colorWarnBg); border-left-color: var(--colorWarn); }
 .noticeDanger { background: var(--colorDangerBg); border-left-color: var(--colorDanger); }
 

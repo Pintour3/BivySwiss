@@ -5,7 +5,7 @@ planification avec les CFF, quiz de matériel selon la météo, choix du sac, re
 
 - **Backend** : Node.js + Express + MongoDB (Mongoose), JavaScript (modules ES).
 - **Frontend** : React + Vite, JavaScript, icônes [Tabler](https://tabler.io/icons), animations GSAP.
-- **Identité** : logo « Bivouac », palette Forêt, polices Yanone Kaffeesatz (titres) et Chakra Petch (texte). Voir `branding/`.
+- **Identité** : logo « Bivouac », palette Ardoise et lichen, polices Yanone Kaffeesatz (titres) et Chakra Petch (texte). Voir `branding/`.
 
 ## Démarrer
 
