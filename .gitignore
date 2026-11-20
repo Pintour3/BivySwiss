@@ -1,0 +1,23 @@
+# Dépendances et builds
+node_modules/
+dist/
+build/
+coverage/
+
+# Secrets : ne jamais commiter
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Données locales (MongoDB de dev, cache de tuiles swisstopo, logs)
+.data/
+server/data/tiles/
+*.log
+logs/
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
