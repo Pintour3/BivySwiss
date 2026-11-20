@@ -5,17 +5,25 @@ import { WeatherService } from './WeatherService.js';
 import { BackpackAdvisor } from './BackpackAdvisor.js';
 
 export const QUIZ_QUESTIONS = [
-  { id: 'durationDays', label: 'Combien de jours pars-tu ?', type: 'number', min: 1, max: 7, default: 2 },
-  { id: 'groupSize', label: 'Tu pars seul ou à plusieurs ?', type: 'choice', options: [
-    { value: 'solo', label: 'Seul' }, { value: 'duo', label: 'À deux' }, { value: 'groupe', label: 'En groupe' }] },
-  { id: 'groupCount', label: 'Combien de personnes en tout ?', type: 'number', min: 3, max: 12, default: 4, showIf: { groupSize: 'groupe' } },
-  { id: 'shelter', label: 'Comment vas-tu dormir ?', type: 'choice', showIf: { durationDays: { gte: 2 } }, options: [
-    { value: 'tente', label: 'Sous tente' }, { value: 'hamac', label: 'En hamac' }, { value: 'belleEtoile', label: 'À la belle étoile' }] },
+  { id: 'durationDays', label: 'Combien de jours pars-tu ?', hint: 'Au-delà d\'un jour, on prévoit une nuit en bivouac.', type: 'number', min: 1, max: 7, default: 2, unit: ['jour', 'jours'] },
+  { id: 'groupSize', label: 'Tu pars seul ou à plusieurs ?', hint: 'À plusieurs, le matériel commun se partage.', type: 'choice', options: [
+    { value: 'solo', label: 'Seul', description: 'Tout le matériel est pour toi' },
+    { value: 'duo', label: 'À deux', description: 'Une tente et un réchaud pour deux' },
+    { value: 'groupe', label: 'En groupe', description: 'Trois personnes ou plus' }] },
+  { id: 'groupCount', label: 'Combien de personnes en tout ?', type: 'number', min: 3, max: 12, default: 4, unit: ['personne', 'personnes'], showIf: { groupSize: 'groupe' } },
+  { id: 'shelter', label: 'Comment vas-tu dormir ?', hint: 'L\'abri change le poids du sac et le couchage.', type: 'choice', showIf: { durationDays: { gte: 2 } }, options: [
+    { value: 'tente', label: 'Sous tente', description: 'Le plus sûr, même s\'il pleut' },
+    { value: 'hamac', label: 'En hamac', description: 'Léger, il faut des arbres' },
+    { value: 'belleEtoile', label: 'À la belle étoile', description: 'Le plus léger, si le ciel est clair' }] },
   { id: 'food', label: 'Comment veux-tu manger ?', type: 'choice', options: [
-    { value: 'cuisiner', label: 'Je cuisine sur place' }, { value: 'lyophilise', label: 'Lyophilisé (eau chaude seulement)' }, { value: 'froid', label: 'Tout prêt, sans cuisson' }] },
-  { id: 'shareGear', label: 'Partagez-vous le matériel commun (tente, réchaud) ?', type: 'boolean', default: true, showIf: { groupSize: { in: ['duo', 'groupe'] } } },
-  { id: 'hike', label: 'Quel itinéraire ?', type: 'hike' },
-  { id: 'date', label: 'Quand pars-tu ?', type: 'date' },
+    { value: 'cuisiner', label: 'Je cuisine', description: 'Réchaud, popote et vraies recettes' },
+    { value: 'lyophilise', label: 'Lyophilisé', description: 'Juste de l\'eau chaude dans le sachet' },
+    { value: 'froid', label: 'Tout prêt', description: 'Sans cuisson, pas de réchaud' }] },
+  { id: 'shareGear', label: 'Partagez-vous le matériel commun ?', hint: 'Tente, réchaud, pharmacie : un seul pour le groupe.', type: 'boolean', showIf: { groupSize: { in: ['duo', 'groupe'] } }, options: [
+    { value: true, label: 'Oui, on partage', description: 'Moins de poids pour chacun' },
+    { value: false, label: 'Non, chacun le sien', description: 'Plus d\'autonomie' }] },
+  { id: 'hike', label: 'Quel itinéraire ?', hint: 'Pour l\'eau, la météo et les règles de bivouac.', type: 'hike', optional: true },
+  { id: 'date', label: 'Quand pars-tu ?', hint: 'La météo est disponible jusqu\'à 16 jours à l\'avance.', type: 'date', optional: true },
 ];
 
 export class QuizService {

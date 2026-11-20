@@ -2,6 +2,16 @@
 
 Un petit résumé à chaque push : ce qui a été ajouté ou corrigé.
 
+## 0.4.0 — Quiz façon Duolingo, cartes de choix façon Airbnb (2026-11-20)
+
+- Quiz bivouac plein écran, sobre (blanc, ardoise, grands titres) : une question par écran, transition glissée entre les étapes.
+- Barre de progression épaisse et arrondie qui rebondit en avançant, avec étincelles au bout de la barre et petits encouragements (« Bien vu ! »).
+- Bouton « Continuer » en relief en bas d'écran, qui s'active (bandeau vert lichen) dès qu'une réponse est donnée ; « Passer » pour les questions facultatives.
+- Raccourcis clavier : 1, 2, 3 pour choisir, Entrée pour continuer.
+- Cartes de choix réutilisables (icône, titre, description, coche, bordure épaisse) : quiz, choix d'itinéraire, dates rapides (demain, ce samedi, dans une semaine), et planificateur (train ou local, durée de la sortie).
+- Compteur animé pour le nombre de jours et de personnes, confettis à l'affichage de la liste de matériel.
+- Les particules et animations sont désactivées si le système demande de réduire les animations.
+
 ## 0.3.0 — Photos des plats, recettes et matériel (2026-11-20)
 
 - Photos libres (Wikimedia Commons) pour les 10 recettes, les 12 plats et 40 objets de matériel, stockées dans `server/public/images/` et servies par l'API sous `/images`.

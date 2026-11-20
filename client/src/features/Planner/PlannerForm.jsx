@@ -1,4 +1,6 @@
-import { IconWalk, IconTrain, IconSearch } from '@tabler/icons-react';
+import { IconWalk, IconTrain, IconSearch, IconSun, IconTent, IconBackpack } from '@tabler/icons-react';
+import { ChoiceCards } from '../Common/ChoiceCards.jsx';
+import { sparkleFrom } from '../Common/particles.js';
 import { CANTONS } from '../Common/format.js';
 
 export function PlannerForm({ values, onChange, onSubmit, busy }) {
@@ -9,17 +11,13 @@ export function PlannerForm({ values, onChange, onSubmit, busy }) {
         <input id="plannerHome" required value={values.home} onChange={set('home')} placeholder="ex. Lausanne, 1700 Fribourg" />
       </label>
 
-      <fieldset className="plannerModes">
-        <legend className="formField">Comment y aller ?</legend>
-        <label className={`plannerMode ${values.transport === 'local' ? 'plannerModeActive' : ''}`}>
-          <input type="radio" name="transport" value="local" checked={values.transport === 'local'} onChange={set('transport')} />
-          <IconWalk size={22} /><span><b>Près de chez moi</b><small>dans un rayon d'environ 45 km</small></span>
-        </label>
-        <label className={`plannerMode ${values.transport === 'train' ? 'plannerModeActive' : ''}`}>
-          <input type="radio" name="transport" value="train" checked={values.transport === 'train'} onChange={set('transport')} />
-          <IconTrain size={22} /><span><b>En train CFF</b><small>horaires et prix estimé</small></span>
-        </label>
-      </fieldset>
+      <div className="formField">Comment y aller ?
+        <ChoiceCards name="transport" layout="list" value={values.transport} onChange={(v) => onChange({ ...values, transport: v })} onPicked={(el) => sparkleFrom(el, { count: 8 })}
+          options={[
+            { value: 'local', icon: IconWalk, label: 'Près de chez moi', description: 'Dans un rayon d\'environ 45 km' },
+            { value: 'train', icon: IconTrain, label: 'En train CFF', description: 'Horaires réels et prix estimé' },
+          ]} />
+      </div>
 
       {values.transport === 'train' && (
         <div className="plannerRow">
@@ -28,15 +26,20 @@ export function PlannerForm({ values, onChange, onSubmit, busy }) {
         </div>
       )}
 
+      <div className="formField">Durée de la sortie
+        <ChoiceCards name="durationDays" columns={3} value={values.durationDays} onChange={(v) => onChange({ ...values, durationDays: v })} onPicked={(el) => sparkleFrom(el, { count: 8 })}
+          options={[
+            { value: '1', icon: IconSun, label: '1 jour', description: 'Aller-retour' },
+            { value: '2', icon: IconTent, label: '2 jours', description: 'Une nuit en bivouac' },
+            { value: '3', icon: IconBackpack, label: '3 jours', description: 'Petit trek' },
+          ]} />
+      </div>
+
       <div className="plannerRow">
         <label className="formField">Temps de marche : {values.durationHours} h
           <input id="plannerHours" type="range" min="1" max="9" step="0.5" value={values.durationHours} onChange={set('durationHours')} />
         </label>
-        <label className="formField">Durée de la sortie
-          <select id="plannerDays" value={values.durationDays} onChange={set('durationDays')}>
-            <option value="1">Une journée</option><option value="2">2 jours avec bivouac</option><option value="3">3 jours</option>
-          </select>
-        </label>
+
         <label className="formField">Date
           <input id="plannerDate" type="date" value={values.date} onChange={set('date')} />
         </label>

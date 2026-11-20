@@ -1,4 +1,4 @@
-.plannerLayout { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: var(--space5); align-items: start; }
+.plannerLayout { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: var(--space5); align-items: start; }
 .plannerForm { gap: var(--space4); position: sticky; top: 80px; }
 .plannerOutput { display: grid; gap: var(--space4); min-width: 0; }
 .plannerOutput .cardGrid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
@@ -22,3 +22,8 @@
 .plannerTrain .buttonGhost { justify-self: start; padding-left: 0; }
 .plannerActions { display: flex; flex-wrap: wrap; gap: var(--space2); }
 @media (max-width: 900px) { .plannerLayout { grid-template-columns: 1fr; } .plannerForm { position: static; } }
+
+.plannerForm .choiceCards_grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space2); }
+.plannerForm .choiceCards_grid .choiceCard { min-height: 0; padding: var(--space3); }
+.plannerForm .choiceCards_grid .choiceCardDescription { font-size: .78rem; }
+.plannerForm .formField > .choiceCards { font-weight: 400; }

@@ -1,0 +1,29 @@
+.choiceCards { display: grid; gap: var(--space3); }
+.choiceCards_grid { grid-template-columns: repeat(var(--choiceColumns, auto-fit), minmax(150px, 1fr)); }
+.choiceCards_list { grid-template-columns: 1fr; }
+.choiceCard {
+  position: relative; display: grid; gap: var(--space2); align-content: start; justify-items: start;
+  padding: var(--space4); min-height: 120px; cursor: pointer;
+  border: 1px solid var(--colorLine); border-radius: 12px; background: var(--colorPaper);
+  transition: border-color .15s, box-shadow .15s, background-color .15s;
+}
+.choiceCards_list .choiceCard { grid-template-columns: auto 1fr auto; align-items: center; min-height: 0; padding: var(--space3) var(--space4); }
+.choiceCard:hover { border-color: var(--colorInk); }
+.choiceCardSelected { border-color: var(--colorInk); box-shadow: inset 0 0 0 1px var(--colorInk); background: var(--colorMist); }
+.choiceCard:has(.choiceCardInput:focus-visible) { outline: 2px solid var(--colorSlate); outline-offset: 2px; }
+.choiceCardInput { position: absolute; opacity: 0; pointer-events: none; }
+.choiceCardIcon { color: var(--colorInk); }
+.choiceCardImage { width: 56px; height: 56px; object-fit: cover; border-radius: 8px; }
+.choiceCardText { display: grid; gap: 2px; min-width: 0; }
+.choiceCardTitle { font-weight: 600; font-size: 1rem; color: var(--colorInk); }
+.choiceCardDescription { font-size: .85rem; color: var(--colorStone); line-height: 1.35; }
+.choiceCardCheck { position: absolute; top: 10px; right: 10px; color: var(--colorInk); opacity: 0; transform: scale(.5); transition: opacity .15s, transform .2s; }
+.choiceCards_list .choiceCardCheck { position: static; }
+.choiceCardSelected .choiceCardCheck { opacity: 1; transform: scale(1); }
+.choiceCardKey { position: absolute; bottom: 10px; right: 10px; font: 600 .7rem var(--fontBody); color: var(--colorStone); border: 1px solid var(--colorLine); border-radius: 4px; padding: 0 5px; }
+.choiceCards_list .choiceCardKey { display: none; }
+@media (max-width: 520px) {
+  .choiceCards_grid { grid-template-columns: 1fr; }
+  .choiceCards_grid .choiceCard { grid-template-columns: auto 1fr; align-items: center; min-height: 0; }
+  .choiceCards_grid .choiceCardKey { display: none; }
+}
