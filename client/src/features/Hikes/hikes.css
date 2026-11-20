@@ -1,0 +1,21 @@
+.hikeCardTop { display: flex; flex-wrap: wrap; gap: 6px; }
+.hikeCardLink { color: inherit; text-decoration: none; }
+.hikeCardLink:hover { color: var(--colorForest); text-decoration: underline; text-underline-offset: 3px; }
+.hikeCardRegion { display: flex; align-items: center; gap: 4px; color: var(--colorStone); font-size: .9rem; }
+.hikeDetailGrid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: var(--space5); align-items: start; }
+.hikeDetailMap { display: grid; gap: var(--space2); }
+.hikeDetailNote { font-size: .85rem; color: var(--colorStone); }
+.hikeDetailFacts { display: grid; gap: var(--space4); }
+.factList { margin: 0; display: grid; border-top: 1px solid var(--colorLine); }
+.factList > div { display: flex; justify-content: space-between; gap: var(--space3); padding: 8px 0; border-bottom: 1px solid var(--colorLine); }
+.factList dt { display: flex; align-items: center; gap: 6px; color: var(--colorStone); }
+.factList dd { margin: 0; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.exportButtons { display: grid; gap: var(--space2); }
+.weatherStrip { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: var(--space2); }
+.weatherDay { display: grid; justify-items: start; gap: 4px; padding: var(--space3); border: 1px solid var(--colorLine); border-radius: var(--radiusMedium); border-top: 3px solid var(--colorOk); color: var(--colorForest); }
+.weatherDay_moyenne { border-top-color: var(--colorWarn); }
+.weatherDay_mauvaise { border-top-color: var(--colorDanger); }
+.weatherDayDate { font-weight: 600; text-transform: capitalize; color: var(--colorInk); }
+.weatherDayTemp { font-variant-numeric: tabular-nums; color: var(--colorInk); }
+.weatherDayRain { font-size: .8rem; color: var(--colorStone); }
+@media (max-width: 860px) { .hikeDetailGrid { grid-template-columns: 1fr; } }

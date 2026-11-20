@@ -1,0 +1,6 @@
+.recipeCard summary { list-style: none; cursor: pointer; display: grid; gap: var(--space3); }
+.recipeCard summary::-webkit-details-marker { display: none; }
+.recipeCard[open] { border-color: var(--colorForest); }
+.recipeBody { display: grid; gap: var(--space2); border-top: 1px solid var(--colorLine); padding-top: var(--space3); }
+.recipeBody h4 { margin: 0; font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; color: var(--colorStone); }
+.recipeBody ul, .recipeBody ol { margin: 0; padding-left: 1.2em; display: grid; gap: 2px; }

@@ -1,0 +1,6 @@
+.swissMap { position: relative; border: 1px solid var(--colorLine); border-radius: var(--radiusMedium); overflow: hidden; min-height: 280px; }
+.swissMapCanvas { width: 100%; height: 100%; background: var(--colorMist); }
+.swissMapSwitch { position: absolute; top: var(--space3); right: var(--space3); z-index: 500; display: flex; background: var(--colorPaper); border: 1px solid var(--colorLine); border-radius: var(--radiusSmall); overflow: hidden; }
+.swissMapSwitch button { border: 0; background: none; padding: 6px 12px; font-weight: 600; font-size: .85rem; cursor: pointer; }
+.swissMapSwitchActive { background: var(--colorForest) !important; color: var(--colorPaper); }
+.leaflet-container { font-family: var(--fontBody); }

@@ -5,6 +5,7 @@ import { GeoUtils } from '../utils/GeoUtils.js';
 import { TransportService } from './TransportService.js';
 
 const LOCAL_RADIUS_KM = 45;
+const MAX_DAY_TRIP_MIN = 13 * 60; // trajet aller-retour + marche pour une sortie d'un jour
 
 export class PlannerService {
   constructor({ transportService = new TransportService(), geocodingService } = {}) {
@@ -41,10 +42,20 @@ export class PlannerService {
       candidates = near.length ? near : candidates.sort((a, b) => a.distanceFromHomeKm - b.distanceFromHomeKm).slice(0, limit);
     }
     candidates.sort((a, b) => b.score - a.score);
-    const top = candidates.slice(0, limit);
+    let top = candidates.slice(0, limit);
 
     if (transport === 'train') {
-      await Promise.all(top.map((c) => this.attachTrainInfo(c, { home, date, hasGeneralAbonnement, hasHalfFare })));
+      // On interroge l'horaire pour plus de candidats, puis on écarte les journées trop longues.
+      const pool = candidates.slice(0, limit * 2);
+      await Promise.all(pool.map((c) => this.attachTrainInfo(c, { home, date, hasGeneralAbonnement, hasHalfFare })));
+      const maxDayMin = durationDays >= 2 ? Infinity : MAX_DAY_TRIP_MIN;
+      for (const c of pool) {
+        if (c.train?.travelMinOneWay) c.score -= Math.round(c.train.travelMinOneWay / 6);
+      }
+      top = pool
+        .filter((c) => !c.totalDayMin || c.totalDayMin <= maxDayMin)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, limit);
     }
     return {
       criteria: { home, transport, hasGeneralAbonnement, hasHalfFare, durationHours, durationDays, canton: canton ?? null, city: city ?? null, date: date ?? null },
@@ -64,7 +75,7 @@ export class PlannerService {
     if (gap < 0.2) reasons.push('Durée proche de ce que tu cherches');
 
     // Proximité : très importante en mode local, moins en train.
-    score -= distanceFromHomeKm * (transport === 'local' ? 0.8 : 0.15);
+    score -= distanceFromHomeKm * (transport === 'local' ? 0.8 : 0.3);
     if (distanceFromHomeKm < 25) reasons.push(`À ${Math.round(distanceFromHomeKm)} km de chez toi`);
 
     if (cityPoint) {

@@ -1,0 +1,24 @@
+.homeHero { background: var(--colorForestDeep); color: var(--colorPaper); overflow: hidden; }
+.homeHeroInner { max-width: var(--contentWidth); margin: 0 auto; padding: var(--space7) var(--space4) 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space5); align-items: end; }
+.homeHeroText { display: grid; gap: var(--space4); padding-bottom: var(--space7); }
+.homeHeroText .pageHeaderEyebrow { color: var(--colorSage); }
+.homeTitle { color: var(--colorPaper); font-size: clamp(3rem, 8vw, 5.6rem); }
+.homeLede { color: var(--colorSageLight); max-width: 46ch; font-size: 1.05rem; }
+.homeActions { display: flex; flex-wrap: wrap; gap: var(--space3); }
+.homeActions .buttonPrimary { background: var(--colorPaper); color: var(--colorForestDeep); border-color: var(--colorPaper); }
+.homeActions .buttonPrimary:hover { background: var(--colorSageLight); }
+.homeActions .buttonSecondary { background: transparent; color: var(--colorPaper); border-color: var(--colorSage); }
+.homeActions .buttonSecondary:hover { background: var(--colorForest); }
+.homeRidge { width: 100%; height: auto; display: block; }
+.homeRidgeLine { fill: none; stroke: var(--colorSage); stroke-width: 3; stroke-linejoin: round; }
+.homeRidgeTent { fill: var(--colorPaper); }
+.homeRidgeStar { fill: var(--colorSage); }
+.homeEntries { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space4); }
+.homeEntry { display: grid; gap: var(--space2); align-content: start; padding: var(--space4); border: 1px solid var(--colorLine); border-radius: var(--radiusMedium); text-decoration: none; color: var(--colorInk); transition: border-color .15s, transform .15s; }
+.homeEntry:hover { border-color: var(--colorForest); transform: translateY(-2px); }
+.homeEntry p { color: var(--colorStone); font-size: .92rem; }
+.homeEntryIcon { color: var(--colorForest); }
+@media (max-width: 760px) {
+  .homeHeroInner { grid-template-columns: 1fr; }
+  .homeHeroText { padding-bottom: 0; }
+}

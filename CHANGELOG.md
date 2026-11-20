@@ -2,6 +2,14 @@
 
 Un petit résumé à chaque push : ce qui a été ajouté ou corrigé.
 
+## 0.2.0 — Frontend React (2026-11-20)
+
+- Application React (Vite) avec le thème Forêt, les icônes Tabler et les animations GSAP.
+- Pages : accueil, itinéraires (carte swisstopo, filtres), détail (tracé, météo, export Google/Apple/GPX), planificateur, quiz bivouac, composition du sac (jauge de remplissage), recettes, plats, compte (préparé).
+- Correctif : les animations se terminent toujours, même si le navigateur suspend l'animation (contenu jamais invisible).
+- Correctif : en mode train, les sorties d'un jour de plus de 13 h (trajet + marche) sont écartées, et le temps de trajet pèse dans le classement.
+- Correctif : plus d'alerte « sac à moitié vide » sur les plus petits sacs.
+
 ## 0.1.0 — Backend initial (2026-11-20)
 
 - Structure du projet : `server/` (Node.js + Express + MongoDB) et `client/` (React).

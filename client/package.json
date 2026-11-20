@@ -1,0 +1,27 @@
+{
+  "name": "@bivyswiss/client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "@fontsource/chakra-petch": "^5.3.0",
+    "@fontsource/yanone-kaffeesatz": "^5.3.0",
+    "@gsap/react": "^2.1.2",
+    "@tabler/icons-react": "^3.52.0",
+    "gsap": "^3.15.1",
+    "leaflet": "^1.9.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.18.6"
+  }
+}

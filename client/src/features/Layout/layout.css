@@ -1,0 +1,21 @@
+.appShell { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; }
+.siteHeader { position: sticky; top: 0; z-index: 1000; background: var(--colorPaper); border-bottom: 1px solid var(--colorLine); }
+.siteHeaderInner { max-width: var(--contentWidth); margin: 0 auto; padding: var(--space2) var(--space4); display: flex; align-items: center; gap: var(--space4); }
+.siteBrand { display: flex; align-items: center; gap: var(--space2); text-decoration: none; }
+.siteBrandName { font-family: var(--fontTitle); font-weight: 700; font-size: 1.9rem; color: var(--colorForest); line-height: 1; }
+.siteNav { margin-left: auto; display: flex; align-items: center; gap: 2px; }
+.siteNavLink { padding: 8px 10px; border-radius: var(--radiusSmall); text-decoration: none; color: var(--colorInk); font-weight: 600; font-size: .95rem; display: inline-flex; align-items: center; gap: 6px; }
+.siteNavLink:hover { background: var(--colorMist); }
+.siteNavLinkActive { color: var(--colorForest); box-shadow: inset 0 -2px 0 var(--colorForest); border-radius: 0; }
+.siteNavAccount { margin-left: var(--space2); border: 1px solid var(--colorLine); }
+.siteMenuToggle { display: none; margin-left: auto; background: none; border: 1px solid var(--colorLine); border-radius: var(--radiusSmall); padding: 6px; cursor: pointer; }
+.siteFooter { border-top: 1px solid var(--colorLine); background: var(--colorMist); }
+.siteFooterInner { max-width: var(--contentWidth); margin: 0 auto; padding: var(--space4); display: flex; flex-wrap: wrap; gap: var(--space2) var(--space5); justify-content: space-between; font-size: .85rem; color: var(--colorStone); }
+
+@media (max-width: 860px) {
+  .siteMenuToggle { display: inline-flex; }
+  .siteNav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--colorPaper); border-bottom: 1px solid var(--colorLine); flex-direction: column; align-items: stretch; padding: var(--space2) var(--space4) var(--space4); }
+  .siteNavOpen { display: flex; }
+  .siteNavLinkActive { box-shadow: inset 3px 0 0 var(--colorForest); }
+  .siteNavAccount { margin-left: 0; }
+}

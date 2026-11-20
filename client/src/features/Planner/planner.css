@@ -1,0 +1,24 @@
+.plannerLayout { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: var(--space5); align-items: start; }
+.plannerForm { gap: var(--space4); position: sticky; top: 80px; }
+.plannerOutput { display: grid; gap: var(--space4); min-width: 0; }
+.plannerOutput .cardGrid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.plannerModes { border: 0; padding: 0; margin: 0; display: grid; gap: var(--space2); }
+.plannerModes legend { margin-bottom: 6px; }
+.plannerMode { display: flex; gap: var(--space3); align-items: center; padding: var(--space3); border: 1px solid var(--colorLine); border-radius: var(--radiusMedium); cursor: pointer; color: var(--colorStone); }
+.plannerMode input { position: absolute; opacity: 0; }
+.plannerMode span { display: grid; }
+.plannerMode b { color: var(--colorInk); }
+.plannerMode small { font-size: .82rem; }
+.plannerModeActive { border-color: var(--colorForest); box-shadow: inset 0 0 0 1px var(--colorForest); color: var(--colorForest); }
+.plannerMode:has(input:focus-visible) { outline: 2px solid var(--colorForest); outline-offset: 2px; }
+.plannerRow { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: var(--space3); }
+.plannerRow input[type=range] { accent-color: var(--colorForest); padding: 0; border: 0; }
+.plannerReasons { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: .9rem; }
+.plannerReasons li { display: flex; gap: 6px; align-items: center; }
+.plannerReasonWarn { color: var(--colorWarn); }
+.plannerTrain { display: grid; gap: 4px; padding: var(--space3); background: var(--colorMist); border-radius: var(--radiusSmall); font-size: .9rem; }
+.plannerTrainHead { display: flex; gap: 6px; align-items: center; color: var(--colorForest); }
+.plannerTrain small { color: var(--colorStone); }
+.plannerTrain .buttonGhost { justify-self: start; padding-left: 0; }
+.plannerActions { display: flex; flex-wrap: wrap; gap: var(--space2); }
+@media (max-width: 900px) { .plannerLayout { grid-template-columns: 1fr; } .plannerForm { position: static; } }

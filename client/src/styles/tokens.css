@@ -1,0 +1,32 @@
+/* Palette Forêt BivySwiss : blanc, vert forêt, vert sauge. Aucun dégradé. */
+:root {
+  --colorForest: #1F4A33;
+  --colorForestDeep: #10261A;
+  --colorSage: #9CC3A5;
+  --colorSageLight: #E4EFE6;
+  --colorPaper: #FFFFFF;
+  --colorMist: #F4F7F4;
+  --colorInk: #14231A;
+  --colorStone: #5B6B60;
+  --colorLine: #D8E2DA;
+  --colorWarn: #9A5B12;
+  --colorWarnBg: #FBF1E2;
+  --colorDanger: #A3261B;
+  --colorDangerBg: #FBE9E7;
+  --colorOk: #2E6B3F;
+
+  --fontTitle: 'Yanone Kaffeesatz', 'Arial Narrow', sans-serif;
+  --fontBody: 'Chakra Petch', 'Segoe UI', system-ui, sans-serif;
+
+  --radiusSmall: 4px;
+  --radiusMedium: 8px;
+  --space1: 4px;
+  --space2: 8px;
+  --space3: 12px;
+  --space4: 16px;
+  --space5: 24px;
+  --space6: 32px;
+  --space7: 48px;
+  --contentWidth: 1120px;
+  --shadowCard: 0 1px 0 var(--colorLine);
+}
